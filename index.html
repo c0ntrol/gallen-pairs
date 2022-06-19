@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8"/>
+   
+   <link rel="stylesheet" type="text/css" href="styles/goll.css">
+   <link id="colorcss" rel="stylesheet" type="text/css" href="styles/goll-black.css">
+   <!-- load the lovely sentences -->
+   <script src="js/text.js"></script>
+
+   <!-- game settings-->
+   <script src="js/settings.js"></script>
+
+   <!-- index cards and metadata -->
+   <script src="archive/metadata/metadata-en.js"></script>
+   <script src="js/archive.js"></script>
+   
+   <!-- game logics -->
+   <script src="js/goll.js" async></script>
+
+   <!-- the plugin that displays the index cards-->
+   <link href="lightgallery/lightgallery.css" rel="stylesheet">
+   <script src="lightgallery/lightgallery.js"></script>
+
+   <title>Halli Galli in der Galle</title>
+
+ 
+   <link rel="manifest" href="site.manifest.json">
+   
+   
+   <meta name="theme-color" content="#ffffff">
+   <meta name="description" content="Concentration Game, Card Game, Memory Card Game, Pairs Card Game, Pairs, Memory,Halli Galli in der Galle,Halli Galli in der Galle">
+   <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+   <meta property="og:title" content="Halli Galli in der Galle"/>
+   <meta property="og:type" content="website"/>
+   <meta property="og:url" content="https://www.naturkundemuseum-bw.de/"/>
+   <meta property="og:image" content="assets/logo-white.jpg"/>
+   <meta property="og:description" content="Naturkunde Museum Stuttgart"/>
+   
+   <link rel="shortcut icon" href="https://www.naturkundemuseum-bw.de/favicon.ico" type="image/vnd.microsoft.icon">
+
+</head>
+<body>
+
+    <div class="hidden">
+        <section itemscope itemtype="http://schema.org/Game">
+            <h2>Halli Galli in der Galle</h2>
+            <span itemprop="audience" itemscope itemtype="http://schema.org/PeopleAudience">
+             <span itemprop="suggestMinAge">5</span>
+            </span>
+            <p itemprop="name">Halli Galli in der Galle</p>
+            <img src="assets/gollpairs.png" itemprop="thumbnailUrl" alt="two characters rising up from two cards and kissing eachother">
+            <p itemprop="description">
+               Halli Galli in der Galle is a card game in the context of galls.
+                All  the cards are laid face down on a surface and the player flips two cards at each turn. 
+                The objective of the game is to find matching pairs of cards.
+               Halli Galli in der Galle connects the cards to the digital dataset from the Naturkunde Museum Stuttgart, creating common ground in a fun way.
+                Once played, the amazing objects will remain in people's minds.
+                Galls play an important role in biodiversity.
+                <span itemprop="gameboard"></span>
+                <span itemprop="numberOfPlayers" itemscope itemtype="http://schema.org/QuantitativeValue">
+                    <span itemprop="minValue">1</span>
+                    <span itemprop="maxValue">1</span>
+                </span>
+            </p>
+        </section>
+    </div>
+
+    <div id="main">
+        <h1 class="page-title is-action" onClick="onAboutClicked();">Halli Galli in der Galle</h1>
+        
+        <div class="colorbar"> 
+            <ul class="color-select">
+                <li class="black circle" onclick="changeColor(0);">&nbsp;</li>
+                <li class="white circle" onclick="changeColor(1);">&nbsp;</li>
+                <li class="yellow circle" onclick="changeColor(2);">&nbsp;</li>
+                <li class="orange circle" onclick="changeColor(3);">&nbsp;</li>
+                <li class="pink circle" onclick="changeColor(4);">&nbsp;</li>
+                <li class="red circle" onclick="changeColor(5);">&nbsp;</li>
+                <li class="purple circle" onclick="changeColor(6);">&nbsp;</li>
+                <li class="blue circle" onclick="changeColor(7);">&nbsp;</li>
+                <li class="green circle" onclick="changeColor(8);">&nbsp;</li>
+                <li class="brown circle" onclick="changeColor(9);">&nbsp;</li>
+            </ul>
+        </div>
+ 
+        <div class="intro-video">
+            <img src="assets/logo-black.jpg" id="fallback" class="intrologo">
+        </div>
+
+        <div class="audiobar">
+            <div class="left">
+                <span id="music1" class="button music-off sound-button tooltip" onclick="toggleMusic();" style="display:none;">
+                    <span class="tooltiptext">Toggle Music</span>
+                </span>
+            </div>
+            <div class="middle">
+                <span id="sound1" class="button sound-off sound-button tooltip" onclick="toggleSound();">
+                    <span class="tooltiptext">Toggle Sound</span>
+                </span>
+            </div>
+        </div>
+    
+        
+          
+            <div class="bottom center">
+                <div id="start" class="button is-action" onclick="onGameClicked();">Start</div>
+            </div>
+        
+
+        <div class="stat-scroller">
+            <p class="scroll-marquee">
+                <span id="stats">
+                    
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <div id="about" class="hidden">
+        <div class="about-container">
+            <h1 class="page-title">AboutHalli Galli in der Galle</h1>
+            <p id="about-pause" class="hint">(Click to Pause/Resume)</p>
+            <p class="marquee-about" id="about-story">
+               <span id="about-scroller">
+
+                    <br/>
+                    <br/>
+                    „Halli Galli in der Galle“<br/>
+                    <br/>
+                    Was sind Pflanzengallen? <br/>
+                    
+                    <br/>
+                    Pflanzengallen kennen eigentlich alle, nur wissen es die wenigsten. <br/>
+                    Bestimmt hat jeder von uns schon einmal die komischen runden oder spitzen Knubbel <br/>
+                    an Eichen-, Ahorn-, Buchen- <br/>
+                    oder Ulmenblättern gesehen? 
+                    <br/>Wenn nicht - dann vielleicht mal darauf achten.<br/>
+                    <br/>
+                    <br/>
+                    Danke für diese Daten, die für Coding-Da-Vinci-Hackathon<br/>
+                    zur Verfügung gestellt wurden und in unser Spielvergnügen integriert sind. <br/>
+                    Pflanzengallen sind „Produkte abnormen Wachstums an Pflanzen“, <br/>
+                    die durch die „Einwirkung tierischer oder pflanzlicher Parasiten entstehen <br/>
+                    und den Nährboden für diese abgeben“ (Wikipedia). <br/>
+                    Gallen dienen als Lebensraum und das nicht nur für den Gallerzeuger.<br/>
+                    Sie werden oft von weiteren Organismen genutzt. <br/>
+                    Der Übergang von bloßen Mitnutzern bis hin zu Parasiten,<br/>
+                    die sich in der Galle vom Gallerzeuger ernähren, ist fließend. <br/>
+                    Das Leben in einer Galle hat immense Vorteile für den gallenbildenden Parasiten <br/>
+                    oder seine Nachkommen. <br/>
+                    In der Galle herrscht ein angenehmes, stabiles Mikroklima, <br/>
+                    und der Wirt bietet dem gallenbildenden Organismus oder seinen Nachkommen<br/>
+                    auf eigene Kosten Schutz und Nahrung (Czech 1858).<br/>
+                    Gallen sind „Orte“, an denen ganz schön was los ist: <br/>
+                    Verlassene Gallen dienen häufig als Zufluchtsort von Untermietern,<br/>
+                    die in die Galle einziehen, nachdem der Bauherr die Galle bereits verlassen hat<br/>
+                    - oder er aus der Galle herausgeschmissen oder sogar aufgefressen wird. <br/>
+                    In manchen Fällen verändern die Untermieter durch ihre Anwesenheit die Form der besetzten Galle,<br/>
+                     so dass man sie von unbesetzten Gallen und Gallen, <br/>
+                     die noch von ihren ursprünglichen Erzeugern bewohnt werden, <br/>
+                     schon von außen unterscheiden kann.<br/>
+                    Neben Mitnutzern gibt es noch einige Sekundär- und Tertiärparasiten,<br/>
+                     also Hausbesetzer, die ebenfalls in den Gallen zu finden sein können. <br/>
+                     Die Anwesenheit dieser Parasiten geht häufig mit dem Tod des Gallerzeugers einher:<br/>
+                      “Halli Galli” in der Botanik!<br/>
+                    Das Datenpaket des Naturkundemuseums Stuttgart enthält 395 Objekte, <br/>
+                    avon sind 68 fotografisch festgehalten. <br/>
+                    Die Digitalisierung der Museumsobjekte ist sowohl für eine bessere Sammlungsübersicht,<br/>
+                    als auch für den weltweiten Zugriff wichtig. So können die Sammlung und die damit verbundenen<br/>
+                    Informationen besser für die wissenschaftliche Forschung und z.B. für den Naturschutz genutzt werden. <br/>
+                    Die Daten bilden den Zustand jetzt und in jüngerer Vergangenheit ab.<br/>
+                    Manche dieser Gallen fallen bereits dem Klimawandel oder dem Artenschwund zum Opfer. <br/>
+                    Diese negativen Änderungen unserer Umwelt werden auch bei den Gallen augenscheinlich<br/>
+                    und wir können die Krise in der Natur auch hier erleben. <br/>
+                    <br/><br/><br/><br/><br/>
+                    Die Sammlungen des Naturkundemuseums Stuttgart gehen auf <br/>
+                    das Kunst- und Naturalienkabinett der Herzöge von Württemberg zurück. <br/>
+                    Im Jahr 1791 wurde das Naturalienkabinett<br/>
+                    - das heutige Staatliche Museum für Naturkunde - zur eigenständigen Institution.<br/>
+                    Seit dem frühen 19. Jahrhundert bis heute werden die Sammlungen als Basis<br/>
+                    für Forschung und Ausstellung konsequent und zielgerichtet erweitert. <br/>
+                    Heute haben sie internationale Bedeutung und umfassen<br/>
+                    etwa 12 Millionen Objekte/Serien <br/>
+                    aus den Bereichen Botanik, Zoologie, Paläontologie, Mineralogie und Geologie.<br/>
+                    Als Archive der Natur bilden die Sammlungen die wesentlichste Ressource <br/>
+                    der Forschung und des Wissenstransfers. <br/>
+                    Die meisten Objekte sind mit zahlreichen Daten verknüpft, <br/>
+                    die in steigendem Maß in Datenbanken z.T. auch online verfügbar und recherchierbar sind. <br/>
+                    Die digitale Sammlungserschließung und Integration in große Datenportale<br/>
+                    wie GBIF (Global Biodiversity Information Facility) ermöglichen<br/>
+                    Die Analyse von großen Datensätzen in Zusammenarbeit mit anderen Forschungsinstituten <br/>
+                    und die Bearbeitung entsprechender regional übergeordneter Forschungsfragen mit <br/>
+                    gesellschaftspolitischer Relevanz. Die Daten und damit die naturkundlichen <br/>
+                    Sammlungen weltweit sind  wichtig, um Grundfragen zu Themen wie z.B. Insektensterben,<br/>
+                    Artenschwund und auch Klimawandel bearbeiten zu können.<br/><br/>
+                    <br/>
+                    <br/>
+
+
+                    Gameplay by:<br/><br/>
+                    Niels Elburg &nbsp;<br/>
+                    Arianna Doris Ahlgrimm<br/>
+                    Tobias Wilhelm<br/>
+                    Lilian Lemerhofer<br/>
+                    Anne Mertz<br/>
+                    <br/>
+
+                    <br/>
+                    <br/>
+
+                    Special thanks to Coding Da Vinci 2022<br/>
+        
+                    <br/>
+                    Special thanks for sound go to<br/>
+                    <a class="logolink" href="https://freesound.org/people/f4ngy">f4ngy, for "Card Flip" and "Bridging Cards"</a><br/>
+                    <a class="logolink" href="https://freesound.org/people/qubodup">qubodup, for "Puzzle Error"</a><br/>
+                
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/><br/><br/><br/><br/><br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+
+               </span>
+            </p>
+         </div>
+    
+         <div class="bottom">
+            <ul>
+                <li><div class="button zapbutton is-action" onclick="onMainClicked();">Back</div></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="gollstory" class="hidden">
+        <h1 class="page-title"></h1>
+        <p id="story-pause" class="hint">(Click to Pause/Resume)</p>
+        
+        <div class="story-container">
+
+            <p class="marquee" id="story">
+                <span class="text" id="scroller">
+                </span>
+            </p>
+        </div>
+    
+        <div class="bottom">
+            <ul>
+                <li><div class="button zapbutton is-action" onclick="onMainClicked();">Back</div></li>
+            </ul>
+        </div>
+   
+    </div>
+
+    <div id="game" class="hidden">
+
+        <h1 class="page-title">Halli Galli in der Galle</h1>
+
+        <div id="wrapper" class="black">
+
+            <div id="metadata-container" class="metadata-container">
+                        
+            </div>
+    
+            <div class="congratulations hidden" id="you-won"></div> <!-- container for lovely sentences -->
+    
+            <div id="gallery" style="visibility: hidden;" >
+                <div id="lightgallery"></div> <!-- container for index cards -->
+            </div>
+    
+            <div class="colorbar colorbar-fade-in-out" id="settings-bar"> <!-- game settings bar -->
+                <ul class="color-select">
+                    <li class="black circle" onclick="changeColor(0);">&nbsp;</li>
+                    <li class="white circle" onclick="changeColor(1);">&nbsp;</li>
+                    <li class="yellow circle" onclick="changeColor(2);">&nbsp;</li>
+                    <li class="orange circle" onclick="changeColor(3);">&nbsp;</li>
+                    <li class="pink circle" onclick="changeColor(4);">&nbsp;</li>
+                    <li class="red circle" onclick="changeColor(5);">&nbsp;</li>
+                    <li class="purple circle" onclick="changeColor(6);">&nbsp;</li>
+                    <li class="blue circle" onclick="changeColor(7);">&nbsp;</li>
+                    <li class="green circle" onclick="changeColor(8);">&nbsp;</li>
+                    <li class="brown circle" onclick="changeColor(9);">&nbsp;</li>
+                    <li class="circle music-off circle-lightgrey" id="music2" onclick="toggleMusic();"></li>
+                    <li class="circle sound-off circle-lightgrey" id="sound2" onclick="toggleSound();"></li>
+                </ul>
+            </div>
+    
+            <!-- game container -->
+            <div class="goll-container unselectable" id="board">
+    
+                <!-- status bar and walk-away/cheat buttons -->
+                <div class="goll-info-container" id="status">
+                    <div class="goll-info">
+                        Time: <span id="time-remaining">00:00:00</span>
+                        <div class="goll-action-right">
+                            <div id="skip-action" class="action-button tooltip">
+                                <div class="sneakers-icon"></div>
+                                <span class="tooltiptext">Walk away from this game</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goll-info">
+                        Best: <span id="highscore">0</span>
+                    </div>
+                    <div class="goll-info">
+                        Score: <span id="score">0</span>
+                        <div class="goll-action-center">
+                            <div id="cheat-action" class="action-button tooltip">
+                                <div class="cheat-icon"></div>
+                                <span class="tooltiptext">Glimpse at ... or Match a card</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goll-info">
+                        Moves: <span id="moves">0</span>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div id="level" class="level hidden">
+                <span id="current-level">1</span>
+            </div>
+
+            <div id="quit" class="quit">
+                <div class="circle back circle-lightgrey is-action quit-button" onclick="onMainClicked();"></div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- load audio assets -->
+    <audio id="flip-card">
+        <source src="assets/card-flip.wav" type="audio/wav">
+    </audio>
+    <audio id="match-card">
+        <source src="assets/card-match.wav" type="audio/wav">
+    </audio>
+    <audio id="nomatch-card">
+        <source src="assets/card-nomatch.wav" type="audio/wav">
+    </audio>
+   
+    <audio id="shuffle">
+        <source src="assets/shuffle.wav" type="audio/wav">
+    </audio>
+ 
+    <audio id="skip-button">
+        <source src="assets/skip-button.wav" type="audio/wav">
+    </audio>
+
+    <script>
+        initDefaults();
+        loadColor();
+        onMainClicked();
+      
+     /*   document.getElementById("story").addEventListener("click", function() {
+            document.getElementById("scroller").classList.toggle("paused");
+        });
+      */
+
+        document.getElementById("about-story").addEventListener("click", function() {
+            document.getElementById("about-scroller").classList.toggle("paused");
+        });
+    </script>
+    <!-- load lightgallery plugins -->
+    <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+</body>
+</html>
