@@ -4,12 +4,13 @@
  */
 let STARTING_PAIRS = 4;
 let numberOfPairs = STARTING_PAIRS;
-let MAX_NUM_CARDS = 34;
+let MAX_NUM_CARDS = 45;
 let SECONDS_PER_CARD = 3;
 let CHEAT_MIN_SCORE = 100;
 let cd = null;
 let logics = null;
 var timeRemaining = 0;
+var startTimeAgain = false;
 let currentLevel = 0;
 
 class CardDefinition {
@@ -519,9 +520,10 @@ function ready() {
     console.log("Game ready");
 }
 
+
 function restoreGame() {
     document.getElementById('lightgallery').innerHTML = "";
-    var startTimeAgain = false;
+    
     if(timeRemaining == 0) {
         // timer expired while we were looking at cards in the gallery
         startTimerAgain = true;

@@ -35,19 +35,17 @@ indexCards.set( 'assets/card1.jpg', new IndexCard( "1", ["1-1","1-2","1-3","1-4"
 indexCards.set( 'assets/card2.jpg', new IndexCard( "2", ["1-1", ]) );
 indexCards.set( 'assets/card3.jpg', new IndexCard( "3", ["1-1","1-2" ]) );
 indexCards.set( 'assets/card4.jpg', new IndexCard( "4", ["1-1", ]) );
-indexCards.set( 'assets/card5.jpg', new IndexCard( "5", ["1-1","1-2","1-3","1-4","1-5","1-6","1-7","1-8","1-9","1-10","1-11","1-12","1-13","1-14","1-15","1-16","1-17","1-18","1-19","1-20","1-21","1-22","1-23","1-24","1-25","1-26"]) );
+indexCards.set( 'assets/card5.jpg', new IndexCard( "5", ["1-1",]) );
 indexCards.set( 'assets/card6.jpg', new IndexCard( "6", ["1-1", ]) );
 indexCards.set( 'assets/card7.jpg', new IndexCard( "7", ["1-1", ]) );
 indexCards.set( 'assets/card8.jpg', new IndexCard( "8", ["1-1", ]) );
 indexCards.set( 'assets/card9.jpg', new IndexCard( "9", ["1-1", ]) );
 indexCards.set( 'assets/card10.jpg', new IndexCard( "10", ["1-1",  ]) );
-indexCards.set( 'assets/card11.jpg', new IndexCard( "11", ["1-1",  ]) );
+indexCards.set( 'assets/card11.jpg', new IndexCard( "11", ["1-1" ]) );
 indexCards.set( 'assets/card12.jpg', new IndexCard( "12", ["1-1",  ]) );
 indexCards.set( 'assets/card13.jpg', new IndexCard( "13", ["1-1",  ]) );
-indexCards.set( 'assets/card14.jpg', new IndexCard( "14", ["1-1", "1-2"]) );
-
-indexCards.set( 'assets/card15.jpg', new IndexCard( "15", ["1-1","1-2","1-3","1-4","1-5","1-6","1-7","1-8","1-9","1-10","1-11","1-12","1-13","1-14","1-15","1-16","1-17","1-18","1-19","1-20","1-21","1-22","1-23",
-]) );
+indexCards.set( 'assets/card14.jpg', new IndexCard( "14", ["1-1", ]) );
+indexCards.set( 'assets/card15.jpg', new IndexCard( "15", ["1-1",  ]) );
 indexCards.set( 'assets/card16.jpg', new IndexCard( "16", ["1-1",  ]) );
 indexCards.set( 'assets/card17.jpg', new IndexCard( "17", ["1-1",  ]) );
 indexCards.set( 'assets/card18.jpg', new IndexCard( "18", ["1-1",  ]) );
@@ -67,7 +65,19 @@ indexCards.set( 'assets/card31.jpg', new IndexCard( "31", ["1-1",  ]) );
 indexCards.set( 'assets/card32.jpg', new IndexCard( "32", ["1-1",  ]) );
 indexCards.set( 'assets/card33.jpg', new IndexCard( "33", ["1-1",  ]) );
 indexCards.set( 'assets/card34.jpg', new IndexCard( "34", ["1-1",  ]) );
- 
+indexCards.set( 'assets/card35.jpg', new IndexCard( "35", ["1-1",  ]) );
+indexCards.set( 'assets/card36.jpg', new IndexCard( "36", ["1-1",  ]) );
+indexCards.set( 'assets/card37.jpg', new IndexCard( "37", ["1-1", "1-2", "1-3", "1-4", "1-5"  ]) );
+indexCards.set( 'assets/card38.jpg', new IndexCard( "38", ["1-1",  ]) );
+indexCards.set( 'assets/card39.jpg', new IndexCard( "39", ["1-1",  ]) );
+indexCards.set( 'assets/card40.jpg', new IndexCard( "40", ["1-1",  ]) );
+indexCards.set( 'assets/card41.jpg', new IndexCard( "41", ["1-1",  ]) );
+indexCards.set( 'assets/card42.jpg', new IndexCard( "42", ["1-1",  ]) );
+indexCards.set( 'assets/card43.jpg', new IndexCard( "43", ["1-1",  ]) );
+indexCards.set( 'assets/card44.jpg', new IndexCard( "44", ["1-1",  ]) );
+indexCards.set( 'assets/card45.jpg', new IndexCard( "45", ["1-1",  ]) );
+indexCards.set( 'assets/card46.jpg', new IndexCard( "46", ["1-1",  ]) );
+
 
 /*
 
