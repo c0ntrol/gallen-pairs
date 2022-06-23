@@ -32,7 +32,7 @@ let indexCards = new Map();
 //
 indexCards.set( 'assets/card1.jpg', new IndexCard( "1", ["1-1",]) );
 indexCards.set( 'assets/card2.jpg', new IndexCard( "2", ["1-1", ]) );
-indexCards.set( 'assets/card3.jpg', new IndexCard( "3", ["1-1","1-2" ]) );
+indexCards.set( 'assets/card3.jpg', new IndexCard( "3", ["1-1", ]) );
 indexCards.set( 'assets/card4.jpg', new IndexCard( "4", ["1-1", ]) );
 indexCards.set( 'assets/card5.jpg', new IndexCard( "5", ["1-1",]) );
 indexCards.set( 'assets/card6.jpg', new IndexCard( "6", ["1-1", ]) );
