@@ -37,6 +37,14 @@ SMNS_Ent_Gall_000392-001.jpg card36.jpg
 
 var metadataInformation = [
     {
+        "INVENTORY": "1",
+        "LONGDESCRIPTION": "Didymomyia tiliacea an Linde. Gesammelt im August 1986."
+    },
+    {
+        "INVENTORY": "2",
+        "LONGDESCRIPTION": "Eriophyes tiliae an Linde. Gesammelt 1961."
+    },
+    {
         "INVENTORY": "3",
         "LONGDESCRIPTION": "Andricus foecundatrix (Harting): Eine Gallwespe, die ein Ei in eine Blattknospe legt. An verschiedenen Eichen zu finden (Stiel-Eiche und Trauben-Eiche). Wird auch Eichen-Artischocken Galle genannt aufgrund ihres Aussehens. Kann bis zu 2,0 cm lang werde. Farbe: dunkelgrün oder rostrot. Kommt ab Juni, schlüpft im Herbst. Im August fallen die Gallen zu Boden. Das Exemplar in der Sammlung wurde im September 1959 gesammelt. (Asexuelle Generation)"
     },
@@ -57,11 +65,11 @@ var metadataInformation = [
         "LONGDESCRIPTION": " Cynips divisa: Die kugeligen Gallen (oft plattgedrückt) finden sich auf der Blattunterseite der Eichenblätter an den Blattadern. Sie sind von Juni bis Oktober sichtbar. Sie sind weiß bis rot oder braun. Die Gallwespe schlüpft im Herbst oder Frühjahr des Folgejahres. Der deutsche Name ist braune Glanzgalle. Das Exemplar aus der Sammlung wurde im Oktober 1959 gesammelt."
     },
     {
-        "INVENTORY": "8",
+        "INVENTORY": "11",
         "LONGDESCRIPTION": "Neuroterus numismalis (Seidenknopfgallen oder Eichenmünzengallen). Gallwespen. Auf der Blattunterseite von Eichen zu finden. ca. 3mm, ziemlich dick mit Vertiefung in der Mitte. Seidig braun und schimmernder Glanz. Zahlreiche Gallen sind im Sommer und Herbst zu sehen (normalerweise auch viele auf einem einzelnen Blatt). Die Tiere schlüpfen im Folgejahr. Pro Galle ein Tier. Die Gallen wurden im Oktober 1959 gesammelt."
     },
     {
-        "INVENTORY": "11",
+        "INVENTORY": "8",
         "LONGDESCRIPTION": "Neuroterus anthracinus: Austerngalle. Von August bis Oktober sichtbar. Meist an der Mittelrippe der Blattunterseite. Die Gallen sind Eiförmig 3-4 mm lang. Grün bis braun. Die Tiere schlüpfen im Oktober am Boden, wenn die Blätter abgeworfen wurden. Die Gallen wurden im Oktober 1959 gesammelt. Die Galle ist nur an Eichenblättern zu finden."
     },
     {
@@ -83,7 +91,7 @@ var metadataInformation = [
     },
     {
         "INVENTORY": "15",
-        "LONGDESCRIPTION": "euroterus quercusbaccarum - Große Linsengalle. Zu finden an der Unterseite von Eichenblättern. Asexuelle Generation. Im Herbst findet man bräunliche, flache, kurz behaarte Linsengallen an der Unterseite von Eichenblättern. Diese haben einen Durchmesser von etwa 4 bis 6 mm. Oft rote Haare. Eine Larve pro Galle. Die Gallen sind ab Juli zu finden. Oft mehrere Gallen auf einem Blatt. Überwintern und schlüpfen im nächsten Frühjahr. An verschiedenen Eichenarten zu finden. Die Gallen wurden im September 1964 gesammelt. "
+        "LONGDESCRIPTION": "Neuroterus quercusbaccarum - Große Linsengalle. Zu finden an der Unterseite von Eichenblättern. Asexuelle Generation. Im Herbst findet man bräunliche, flache, kurz behaarte Linsengallen an der Unterseite von Eichenblättern. Diese haben einen Durchmesser von etwa 4 bis 6 mm. Oft rote Haare. Eine Larve pro Galle. Die Gallen sind ab Juli zu finden. Oft mehrere Gallen auf einem Blatt. Überwintern und schlüpfen im nächsten Frühjahr. An verschiedenen Eichenarten zu finden. Die Gallen wurden im September 1964 gesammelt. "
     },
     {
         "INVENTORY": "16",
@@ -147,7 +155,7 @@ var metadataInformation = [
     },
     {
         "INVENTORY": "28",
-        "LONGDESCRIPTION": "Urophora cardui an Distel. Ausgelöst durch eine Bohr-Fliege. Gesammelt August 1986."
+        "LONGDESCRIPTION": "Urophora cardui an Distel. Ausgelöst durch eine Bohr-Fliege. Gesammelt August 1986. Eine große, 10 bis 50 mm lange und 5 bis 20 mm dicke, spindelförmige Pflanzengalle an der Acker-Kratzdistel (Cirsium arvense). Galle anfangs grün und fleischig, später braun und holzig. In ihrem Inneren befinden sich mehrere Kammern mit je einer Larve, deren Entwicklung im Juli beginnt. Sie überwintern als Puppentönnchen in der Galle und schlüpfen im nächsten Frühjahr"
     },
     {
         "INVENTORY": "29",
@@ -179,9 +187,49 @@ var metadataInformation = [
         "LONGDESCRIPTION": "Hartigiola annulipes an Buche. Oft zusammenmit Mikiola fagi zu finden. Gallmücke. Gesammelt im August 1986. "
     },
     {
-        "INVENTORY":  "36",
-        "LONGDESCRIPTION": "Didymomyia tiliacea an Linde. Gesammelt im August 1986."
-    }
-    
+        "INVENTORY": "36",
+        "LONGDESCRIPTION": "Andricus foecundatrix (Harting): Eine Gallwespe, die ein Ei in eine Blattknospe legt. An verschiedenen Eichen zu finden (Stiel-Eiche und Trauben-Eiche). Wird auch Eichen-Artischocken Galle genannt aufgrund ihres Aussehens. Kann bis zu 2,0 cm lang werde. Farbe: dunkelgrün oder rostrot. Kommt ab Juni, schlüpft im Herbst. Im August fallen die Gallen zu Boden."
+    },
+
+    {
+        "INVENTORY": "37",
+        "LONGDESCRIPTION": "Diplolepis nervosa - Die Galle kommt in 2 Formen vor. Die eine ist sehr ähnlich wie Diplolepis eglanteriae und leicht mit ihr zu verwechseln: Kugelige, glatte Gallen in der Größe einer Erbse meistens weiß bis hellgrün und rosa bis rot gefärbt. Später sind sie braun. An Rosenblättern auf der Ober- oder Unterseite (meist Unterseite). Bei der zweiten Form sind stachelartige Auswüchse an den Gallen zu erkennen. Leichte Spitzen bis sehr auffällige. Die Gallen sind von Juli bis Oktober zu sehen, die erwachsenen Tiere schlüpfen im Frühling des Folgejahres. Die Gallen sind nur an Rosen zu finden."
+    },
+    {
+        "INVENTORY": "38",
+        "LONGDESCRIPTION": "Andricus solitarius. Die Galle wird von einer Gallwespe ausgelöst und sind an Eichen zu finden. "
+    },
+    {
+        "INVENTORY": "39",
+        "LONGDESCRIPTION": "Knopperngalle. An den Eicheln zu finden (Früchte von Eichen). Wurden noch bis ins 19. Jahrhundert Gerben von Leder genutzt. Verbreitung ursprünglich eher Mittelmeerraum. Wurden Säckeweise nach Deutschland eingeführt. Heute sind Knopperngallen auch in Stuttgart zu finden. Andricus quercuscalicis: Knopperngallwespe. "
+    },
+    {
+        "INVENTORY": "40",
+        "LONGDESCRIPTION": "Andricus kollari: Kugeligen Gallen der asexuellen Generation. Durchmesser von bis zu 25 mm. Sie sind zunächst grün gefärbt, später hell- bis rotbraun. Sie reifen von Juni bis Oktober."
+    },    
+    {
+        "INVENTORY": "41",
+        "LONGDESCRIPTION": "Thamnurgus kaltenbachii. Galle ausgebildet von einem Käfer. Die Galle befindet sich im Ast. Gesammelt im August 1917."
+    },
+    {
+        "INVENTORY": "42",
+        "LONGDESCRIPTION": "Agrobacterium tumefaciens. Eine Galle ausgelöst von einem Bakterium. Diese können bis zu Kopfgroße Baumrindengallen ausbilden. Gesammelt im September 1959."
+    },
+    {
+        "INVENTORY": "43",
+        "LONGDESCRIPTION": "Euura vesicator an einer Weide. Gesammelt im September 1959."
+    },
+    {
+        "INVENTORY": "44",
+        "LONGDESCRIPTION": "Pemphigus bursarius L. an einer Pappel. Gesammelt im September 1959."
+    },
+    {
+        "INVENTORY": "45",
+        "LONGDESCRIPTION": "Colomerus vitis an einemm Weinrebengewächs. Gesammelt September 1959."
+    },
+    {
+        "INVENTORY": "36",
+        "LONGDESCRIPTION": "Gallen an einem Baumpilz. Gesammelt im Dezember 1965 bei Schwäbisch Gmünd."
+    },                        
 ];
     
